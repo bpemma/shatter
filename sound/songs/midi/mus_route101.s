@@ -1748,27 +1748,7 @@ mus_route101_8_009:
 	.byte	W06
 	.byte	PEND
 @ 010   ----------------------------------------
-	.byte		N06   
-	.byte	W24
-	.byte		N12   , Dn1 
-	.byte	W12
-	.byte		N06   , Cn1 
-	.byte	W12
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W06
-	.byte		N12   , Dn1 
-	.byte	W09
-	.byte		BEND  , c_v+61
-	.byte	W03
-	.byte		N06   , Cn1 
-	.byte	W12
-@ 011   ----------------------------------------
-	.byte	PATT
-	 .word	mus_route101_8_009
-@ 012   ----------------------------------------
-mus_route101_8_012:
+mus_route101_8_010:
 	.byte		N06   , Cn1 , v112
 	.byte	W24
 	.byte		N12   , Dn1 
@@ -1784,12 +1764,18 @@ mus_route101_8_012:
 	.byte		N06   , Cn1 
 	.byte	W12
 	.byte	PEND
+@ 011   ----------------------------------------
+	.byte	PATT
+	 .word	mus_route101_8_009
+@ 012   ----------------------------------------
+	.byte	PATT
+	 .word	mus_route101_8_010
 @ 013   ----------------------------------------
 	.byte	PATT
 	 .word	mus_route101_8_009
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	mus_route101_8_012
+	 .word	mus_route101_8_010
 @ 015   ----------------------------------------
 	.byte		N06   , Cn1 , v112
 	.byte	W18
