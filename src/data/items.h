@@ -2064,15 +2064,19 @@ const struct Item gItems[] =
 
     [ITEM_ROOT_FOSSIL] =
     {
-        .name = _("EXP. SHARE"),
-        .itemId = ITEM_EXP_SHARE,
-        .price = 3000,
-        .holdEffect = HOLD_EFFECT_EXP_SHARE,
-        .description = sExpShareDesc,
-        .pocket = POCKET_KEY_ITEMS,
-        .type = 2,
-        .fieldUseFunc = ItemUseOutOfBattle_ExpShare,
-        .secondaryId = 0,
+        .name = _("Root Fossil"),
+        .itemId = ITEM_ROOT_FOSSIL,
+        .description = sRootFossilDesc,
+        #if I_KEY_FOSSILS >= GEN_4
+            .price = 7000,
+            .pocket = POCKET_ITEMS,
+        #else
+            .price = 0,
+            .importance = 1,
+            .pocket = POCKET_KEY_ITEMS,
+        #endif
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
     [ITEM_CLAW_FOSSIL] =
@@ -5799,12 +5803,13 @@ const struct Item gItems[] =
     {
         .name = _("Exp. Share"),
         .itemId = ITEM_EXP_SHARE,
-        .price = 3000,
+        .price = 0,
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
         .description = sExpShareDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_ExpShare,  
     },
 
     [ITEM_QUICK_CLAW] =

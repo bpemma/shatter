@@ -810,6 +810,4 @@ const u32 *const gItemIconTable[][2] =
     // Emerald-only key items
     // Surfboard
     [ITEM_SURFBOARD] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
-    // Return to field arrow
-    [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

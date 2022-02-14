@@ -18,7 +18,6 @@
 midifall_1:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_1_000:
 	.byte		VOICE , 66
 	.byte		        66
 	.byte		        66
@@ -1651,16 +1650,14 @@ midifall_1_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte                   c_v+0
-	.byte	GOTO
-	.word	midifall_1_000		        
+	.byte		        c_v+0
 	.byte	FINE
+
 @**************** Track 2 (Midi-Chn.2) ****************@
 
 midifall_2:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_2_000:
 	.byte		VOICE , 4
 	.byte		        4
 	.byte		        4
@@ -2094,8 +2091,6 @@ midifall_2_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte	GOTO
-	.word	midifall_2_000	
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
@@ -2103,7 +2098,6 @@ midifall_2_000:
 midifall_3:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_3_000:
 	.byte		VOICE , 5
 	.byte		        5
 	.byte		        5
@@ -2314,8 +2308,6 @@ midifall_3_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte	GOTO
-	.word	midifall_3_000	
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
@@ -2323,7 +2315,6 @@ midifall_3_000:
 midifall_4:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_4_000:
 	.byte		VOICE , 0
 	.byte		        0
 	.byte		        0
@@ -2812,8 +2803,6 @@ midifall_4_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte	GOTO
-	.word	midifall_4_000	
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
@@ -2821,7 +2810,6 @@ midifall_4_000:
 midifall_5:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_5_000:
 	.byte		VOICE , 32
 	.byte		        32
 	.byte		        32
@@ -3136,8 +3124,6 @@ midifall_5_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte	GOTO
-	.word	midifall_5_000	
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.10) ****************@
@@ -3145,7 +3131,6 @@ midifall_5_000:
 midifall_6:
 	.byte	KEYSH , midifall_key+0
 @ 000   ----------------------------------------
-midifall_6_000:
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		PAN   , c_v+0
@@ -3946,8 +3931,6 @@ midifall_6_000:
 	.byte		VOL   , 100*midifall_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		        c_v+0
-	.byte	GOTO
-	.word	midifall_6_000	
 	.byte	FINE
 
 @******************************************************@

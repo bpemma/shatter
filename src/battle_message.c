@@ -44,7 +44,7 @@ struct BattleWindowText
     u8 bgColor;
     u8 shadowColor;
 };
-
+static const u8 sText_TeamGainedEXP[] = _("The rest of the team gained EXP. Points\nthanks to the EXP. SHARE!\p");
 static void ChooseMoveUsedParticle(u8 *textPtr);
 static void ChooseTypeOfMoveUsedString(u8 *dst);
 static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst);
@@ -1177,6 +1177,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNBOXLANETTESPCFULL - 12] = gText_PkmnTransferredLanettesPCBoxFull,
     [STRINGID_TRAINER1WINTEXT - 12] = sText_Trainer1WinText,
     [STRINGID_TRAINER2WINTEXT - 12] = sText_Trainer2WinText,
+    [STRINGID_TEAMGAINEDEXP - 12] = sText_TeamGainedEXP,
     [STRINGID_ENDUREDSTURDY - 12] = sText_EnduredViaSturdy,
     [STRINGID_POWERHERB - 12] = sText_PowerHerbActivation,
     [STRINGID_HURTBYITEM - 12] = sText_HurtByItem,
