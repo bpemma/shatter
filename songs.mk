@@ -2330,3 +2330,8 @@ $(MID_SUBDIR)/hg_seq_me_cardgame2.s: %.s: %.mid
 
 $(MID_SUBDIR)/hg_seq_me_gonin.s: %.s: %.mid
 	$(MID) $< $@ -E -R5 -G229 -V088 -p5
+
+
+$(MID_SUBDIR)/midifall.s: %.s: %.mid
+	$(MID) $< $@ -E -R5 -G229 -V080 -p1
+

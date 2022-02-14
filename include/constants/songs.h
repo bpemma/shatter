@@ -915,7 +915,7 @@
 #define HG_SEQ_GS_D_SHINTO            892 // Sinjoh Ruins
 #define HG_SEQ_GS_E_ARCEUS            893 // Arceus
 #define HG_SEQ_ME_GONIN               894 // Let's Go Together (Unused?)
-
+#define MIDIFALL                      895 // Test Song
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

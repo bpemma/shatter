@@ -896,7 +896,7 @@ gSongTable::
 	song hg_seq_gs_d_shinto, 0, 0
 	song hg_seq_gs_e_arceus, 0, 0
 	song hg_seq_me_gonin, 2, 2
-
+	song midifall, 0,0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0
