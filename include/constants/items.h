@@ -851,6 +851,7 @@
 #define ITEM_HM07_WATERFALL ITEM_HM07
 #define ITEM_HM08_DIVE ITEM_HM08
 
+<<<<<<< HEAD
 // Charms
 #define ITEM_OVAL_CHARM 691
 #define ITEM_SHINY_CHARM 692
@@ -873,6 +874,13 @@
 #define ITEM_MEGA_RING 705
 #define ITEM_Z_POWER_RING 706
 #define ITEM_DYNAMAX_BAND 707
+
+// Surfboard
+#define ITEM_SURFBOARD 377
+
+#define ITEMS_COUNT 378
+#define ITEM_FIELD_ARROW ITEMS_COUNT
+
 
 // Misc. Key Items
 #define ITEM_BICYCLE 708
