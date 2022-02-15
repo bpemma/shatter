@@ -28,6 +28,7 @@
 #include "pokemon_summary_screen.h"
 #ifdef POKEMON_EXPANSION
 #include "region_map.h"
+#include "pokemon.h"
 #endif
 #include "reset_rtc_screen.h"
 #include "scanline_effect.h"
@@ -1833,7 +1834,6 @@ static const struct SearchOptionText sDexSearchTypeOptions[NUMBER_OF_MON_TYPES +
     {gText_DexEmptyString, gTypeNames[TYPE_DRAGON]},
     {gText_DexEmptyString, gTypeNames[TYPE_DARK]},
     {gText_DexEmptyString, gTypeNames[TYPE_FAIRY]},
-    #ifdef BATTLE_ENGINE
     {},
 };
 
@@ -1868,13 +1868,7 @@ static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
     TYPE_ICE,
     TYPE_DRAGON,
     TYPE_DARK,
-<<<<<<< HEAD
     TYPE_FAIRY,
-=======
-    #ifdef BATTLE_ENGINE
-    TYPE_FAIRY,
-    #endif
->>>>>>> 1626db9b0595640f443463b2c56b3fd7974e06a5
 };
 
 // Number pairs are the task data for tracking the cursor pos and scroll offset of each option list
@@ -4701,15 +4695,10 @@ static void CreateTypeIconSprites(void)
 // u32 value is re-used, but passed as a bool that's TRUE if national dex is enabled
 static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
 {
-<<<<<<< HEAD
-    u8 str[0x10];
-    u8 str2[0x30];
-    u16 natNum;
-=======
     u8 str[16];
     u8 str2[32];
     u16 species;
->>>>>>> 1626db9b0595640f443463b2c56b3fd7974e06a5
+
     const u8 *name;
     const u8 *category;
     const u8 *description;
@@ -7706,11 +7695,11 @@ static void Task_LoadEvolutionScreen(u8 taskId)
         //Print evo info and icons
         gTasks[taskId].data[3] = 0;
         PrintEvolutionTargetSpeciesAndMethod(taskId, NationalPokedexNumToSpeciesHGSS(sPokedexListItem->dexNum), 0, sPokedexView->numPreEvolutions);
-        LoadSpritePalette(&sSpritePalette_Arrow);
+        LoadSpritePalette(&gSpritePalette_Arrow);
         GetSeenFlagTargetSpecies();
         if (sPokedexView->sEvoScreenData.numAllEvolutions != 0 && sPokedexView->sEvoScreenData.numSeen != 0)
         {
-            sPokedexView->sEvoScreenData.arrowSpriteId = CreateSprite(&sSpriteTemplate_Arrow, 7, 58, 0);
+            sPokedexView->sEvoScreenData.arrowSpriteId = CreateSprite(&gSpriteTemplate_Arrow, 7, 58, 0);
             gSprites[sPokedexView->sEvoScreenData.arrowSpriteId].animNum = 2;
         }
         gMain.state++;
@@ -8578,7 +8567,7 @@ static void Task_LoadFormsScreen(u8 taskId)
         //Print form icons
         gTasks[taskId].data[3] = 0;
         PrintForms(taskId, NationalPokedexNumToSpeciesHGSS(sPokedexListItem->dexNum));
-        LoadSpritePalette(&sSpritePalette_Arrow);
+        LoadSpritePalette(&gSpritePalette_Arrow);
         gMain.state++;
         break;
     case 5:
