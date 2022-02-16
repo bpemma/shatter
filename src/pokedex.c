@@ -7702,7 +7702,7 @@ static void Task_LoadEvolutionScreen(u8 taskId)
         GetSeenFlagTargetSpecies();
         if (sPokedexView->sEvoScreenData.numAllEvolutions != 0 && sPokedexView->sEvoScreenData.numSeen != 0)
         {
-            sPokedexView->sEvoScreenData.arrowSpriteId = CreateSprite(&gSpriteTemplate_Arrow, 7, 58, 0);
+            sPokedexView->sEvoScreenData.arrowSpriteId = CreateSprite(&sSpriteTemplate_Arrow, 7, 58, 0);
             gSprites[sPokedexView->sEvoScreenData.arrowSpriteId].animNum = 2;
         }
         gMain.state++;
@@ -8625,7 +8625,7 @@ static void Task_HandleFormsScreenInput(u8 taskId)
         if (JOY_NEW(A_BUTTON))
         {
             sPokedexView->sFormScreenData.inSubmenu = TRUE;
-            sPokedexView->sFormScreenData.arrowSpriteId = CreateSprite(&gSpriteTemplate_Arrow, base_x + offset_x, base_y, 0);
+            sPokedexView->sFormScreenData.arrowSpriteId = CreateSprite(&sSpriteTemplate_Arrow, base_x + offset_x, base_y, 0);
             gSprites[sPokedexView->sFormScreenData.arrowSpriteId].animNum = 2;
             EvoFormsPage_PrintNavigationButtons();
         }

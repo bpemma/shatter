@@ -610,8 +610,10 @@
 #define STRINGID_NEUTRALIZINGGASENTERS                607
 #define STRINGID_NEUTRALIZINGGASOVER                  608
 #define STRINGID_TEAMGAINEDEXP                        609
+#define STRINGID_TARGETTOOHEAVY                       610
+#define STRINGID_PKMNTOOKTARGETHIGH                   611
 
-#define BATTLESTRINGS_COUNT                           610
+#define BATTLESTRINGS_COUNT                           612
 
 // The below IDs are all indexes into battle message tables,
 // used to determine which of a set of messages to print.

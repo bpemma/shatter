@@ -3,6 +3,7 @@
 
 // Original JP names listed on right, along with any additional notes
 
+
 #define MUS_DUMMY                     0 // MUS_DUMMY
 #define SE_USE_ITEM                   1 // SE_KAIFUKU
 #define SE_PC_LOGIN                   2 // SE_PC_LOGIN
@@ -447,6 +448,7 @@
 #define MUS_VS_RIVAL                  435 // MUS_BATTLE35
 #define MUS_VS_ELITE_FOUR             436 // MUS_BATTLE38
 #define MUS_VS_AQUA_MAGMA_LEADER      437 // MUS_BATTLE30
+
 
 // FireRed & LeafGreen Music 
 #define MUS_RG_FOLLOW_ME              438 // MUS_RG_ANNAI
